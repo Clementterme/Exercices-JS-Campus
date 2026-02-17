@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
 
-<nav class="menu-nav">
-    <button onclick="deroulerMenu()">Menu</button>
-    <ul class="menu-deroulant cacher">
-        <li class="menu-item"><a href="#page1">Page 1</a></li>
-        <li class="menu-item"><a href="#page2">Page 2</a></li>
-        <li class="menu-item"><a href="#page3">Page 3</a></li>
-        <li class="menu-item"><a href="#page3">Page 4</a></li>
-    </ul>
-</nav>
+    <nav class="menu-nav">
+        <button onclick="deroulerMenu()">Menu</button>
+        <ul class="menu-deroulant cacher">
+            <li class="menu-item"><a href="#page1">Page 1</a></li>
+            <li class="menu-item"><a href="#page2">Page 2</a></li>
+            <li class="menu-item"><a href="#page3">Page 3</a></li>
+            <li class="menu-item"><a href="#page3">Page 4</a></li>
+        </ul>
+    </nav>
 
-<script src="script.js"></script>
-</body>
+    <form id="form">
+        <label for="texte">Message</label>
+        <textarea id="texte" name="message"></textarea>
+        <button id="bouton" onclick="afficherMessage()">Envoyer</button>
+    </form>
+
+    <script src="script.js"></script>
+    </body>
 </html>
