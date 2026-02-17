@@ -5,3 +5,45 @@
 .afficher {
     display: block;
 }
+
+#Capa_1 {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+#Capa_2 {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+img {
+    max-width: 400px;
+}
+
+.grille {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    width: max-content;
+}
+
+.colonne {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#affichage1 {
+    width: max-content;
+    padding-right: 5px;
+}
+
+#affichage2 {
+    width: max-content;
+}
+
+#boutons {
+    display: flex;
+    flex-direction: row;
+}

@@ -25,3 +25,15 @@ function afficherMessage() {
     let zoneTexte = document.querySelector("#texte");
     zoneTexte.value = "";
 }
+
+let galerie = document.getElementById("galerie");
+
+function grille() {
+    galerie.classList.remove("colonne");
+    galerie.classList.add("grille");
+}
+
+function colonne() {
+    galerie.classList.remove("grille");
+    galerie.classList.add("colonne");
+}

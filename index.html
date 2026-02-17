@@ -7,6 +7,8 @@
     </head>
     <body>
 
+    <h2>Menu dropdown</h2>
+
     <nav class="menu-nav">
         <button onclick="deroulerMenu()">Menu</button>
         <ul class="menu-deroulant cacher">
@@ -17,12 +19,71 @@
         </ul>
     </nav>
 
+    <h2>Formulaire dynamique</h2>
+
     <form id="form">
         <label for="texte">Message</label>
         <textarea id="texte" name="message"></textarea>
-        <button id="bouton" onclick="afficherMessage()">Envoyer</button>
+        <button onclick="afficherMessage()">Envoyer</button>
     </form>
 
+    <h2>Galerie d'images</h2>
+
+<div id="boutons">
+    <!--  Affichage grille  -->
+    <div id="affichage1" onclick="grille()">
+
+        <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             width="800px" height="800px" viewBox="0 0 35 35" xml:space="preserve">
+    <g>
+        <g>
+            <path d="M0,0v35h35V0H0z M33,33H2V2h31V33z"/>
+            <rect x="14" y="4.5" width="7" height="7"/>
+            <rect x="14" y="14" width="7" height="7"/>
+            <rect x="14" y="23.5" width="7" height="7"/>
+            <rect x="4.5" y="4.5" width="7" height="7"/>
+            <rect x="4.5" y="14" width="7" height="7"/>
+            <rect x="4.5" y="23.5" width="7" height="7"/>
+            <rect x="23.5" y="4.5" width="7" height="7"/>
+            <rect x="23.5" y="14" width="7" height="7"/>
+            <rect x="23.5" y="23.5" width="7" height="7"/>
+        </g>
+    </g>
+    </svg>
+
+    </div>
+
+    <!--  Affichage colonne  -->
+    <div id="affichage2" onclick="colonne()">
+
+        <svg fill="#000000" version="1.1" id="Capa_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             width="800px" height="800px" viewBox="0 0 35 35" xml:space="preserve">
+    <g>
+        <g>
+            <rect y="19.52" width="35" height="15.48"/>
+            <rect width="35" height="15.481"/>
+        </g>
+    </g>
+    </svg>
+
+    </div>
+
+</div>
+
+    <div id="galerie" class="grille">
+        <img src="images/pexels-aliona-pasha-1687920-3892172.jpg" alt="">
+        <img src="images/pexels-bertellifotografia-4558557.jpg" alt="">
+        <img src="images/pexels-dreamypixel-547050.jpg" alt="">
+        <img src="images/pexels-f4photography-663487.jpg" alt="">
+        <img src="images/pexels-kamilzubrzycki-1245066.jpg" alt="">
+        <img src="images/pexels-lukas-hartmann-304281-1462011.jpg" alt="">
+        <img src="images/pexels-quang-nguyen-vinh-222549-2131841.jpg" alt="">
+        <img src="images/pexels-tatianasyrikova-3934023.jpg" alt="">
+        <img src="images/pexels-therato-1933318.jpg" alt="">
+    </div>
+
+
     <script src="script.js"></script>
+
     </body>
 </html>
