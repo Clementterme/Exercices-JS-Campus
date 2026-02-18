@@ -45,7 +45,23 @@ function ajouterImage() {
 
     nouvelleImage.src = image;
 
-    galerie.appendChild(nouvelleImage);
+    let nouvelleDiv = document.createElement("div");
+
+    nouvelleDiv.style.display = "flex";
+    nouvelleDiv.style.flexDirection = "column";
+
+    let btnSupprimer = document.createElement("button");
+
+    btnSupprimer.textContent = "Supprimer";
+
+    btnSupprimer.addEventListener("click", function () {
+        this.remove();
+        nouvelleDiv.remove();
+    });
+
+    galerie.appendChild(nouvelleDiv);
+    nouvelleDiv.appendChild(nouvelleImage);
+    nouvelleDiv.appendChild(btnSupprimer);
 
     let zoneAjoutImage = document.getElementById("ajouterImage");
     zoneAjoutImage.value = "";
