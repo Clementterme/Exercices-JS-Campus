@@ -37,3 +37,16 @@ function colonne() {
     galerie.classList.remove("grille");
     galerie.classList.add("colonne");
 }
+
+function ajouterImage() {
+    let image = document.getElementById("ajouterImage").value;
+
+    let nouvelleImage = document.createElement("img");
+
+    nouvelleImage.src = image;
+
+    galerie.appendChild(nouvelleImage);
+
+    let zoneAjoutImage = document.getElementById("ajouterImage");
+    zoneAjoutImage.value = "";
+}
