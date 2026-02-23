@@ -66,3 +66,25 @@ function ajouterImage() {
     let zoneAjoutImage = document.getElementById("ajouterImage");
     zoneAjoutImage.value = "";
 }
+
+// Validation des compétences
+
+const array = [
+    {
+        "a": 1
+    },
+    {
+        "b": 2
+    },
+    {
+        "c": 3
+    }
+];
+
+function test(value) {
+    if (value > 1) {
+        array.forEach((element => console.log(element)));
+    }
+}
+
+test(0);
